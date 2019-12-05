@@ -86,4 +86,5 @@ else
     jarpath="$libdir/$jarfile"
 fi
 
-exec java "${javaOpts[@]}" -jar "$jarpath" "$@"
+exec java "${javaOpts[@]}" -cp "$jarpath" com.android.tools.r8.compatproguard.CompatProguard "$@"
+
