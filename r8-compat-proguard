@@ -87,4 +87,3 @@ else
 fi
 
 exec java "${javaOpts[@]}" -cp "$jarpath" com.android.tools.r8.compatproguard.CompatProguard "$@"
-
